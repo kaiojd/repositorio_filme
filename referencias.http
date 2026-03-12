@@ -1,2 +1,32 @@
-### Teste de Health Check
-GET http://localhost:3000/
+###
+GET http://localhost:3000/filmes
+
+
+###
+POST http://localhost:3000/filmes
+Content-Type: application/json
+
+
+{
+ "nome": "se beber não case",
+ "genero": "comedia",
+ "ano_lancamento": 2009,
+ "diretor": "eu"
+
+}
+
+
+###
+PUT http://localhost:3000/filmes/1
+Content-Type: application/json
+
+{
+ "nome": "se beber não case parte 2",
+ "genero": "comedia",
+ "ano_lancamento": 2011,
+ "diretor": "eu 2"
+}
+
+
+###
+DELETE http://localhost:3000/filmes/3
